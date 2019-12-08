@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ML Flask App</title>
+</head>
+<body>
+    <div class="container">
+        <div id="brandname">
+            Machine Learning App with Naiive Bayes Classifier
+            </div>
+    <h1 style="align-content: center">Spam Detecter</h1>
+
+
+        </div>
+    <div class="ml-container">
+        <form action="{{url_for('predict')}}" method="POST">
+        <p>Enter your comment here</p>
+         <textarea name="comment" rows="4" cols="50"></textarea>
+            <br/>
+            <input type="submit" class="btn-info" value="predict">
+
+        </form>
+    </div>
+</body>
+</html>

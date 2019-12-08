@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Results</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+           <div id="brandname">
+               ML App
+        </div>
+            <h2>Spam Detection on Hillary Clinton's E-mail leak</h2>
+
+        </div>
+        </header>
+    <p style="color: blue;font-size: medium;text-align: center;"><b>Results for comment</b></p>
+
+    {% if prediction == 1 %}
+    <h2 style="color: red";>SPAM !</h2>
+    {%  elif prediction == 0 %}
+    <h2 style="color: aqua;">It's not a spam !</h2>
+    {% endif %}
+
+</body>
+</html>
